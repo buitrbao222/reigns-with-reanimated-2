@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Card from './components/Card';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
   return (
-    <View style={styles.wrapper}>
+    <GestureHandlerRootView style={styles.wrapper}>
       <Card onChooseLeftAnswer={() => null} onChooseRightAnswer={() => null} />
-    </View>
+    </GestureHandlerRootView>
   );
 }
 
